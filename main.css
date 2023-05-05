@@ -1,0 +1,476 @@
+* {
+  width: 960;
+  font-family: "Montserrat";
+}
+body {
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main-nav img {
+  position: relative;
+  right: -50px;
+  top: 50px;
+}
+.slidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-left: 0px;
+}
+.slidenav a {
+  padding: 9px 9px 9px 32px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 30px;
+}
+.slidenav a:hover {
+  stroke-opacity: 4px;
+  color: rgb(124, 123, 123);
+}
+.icon {
+  float: right;
+  margin: 25px 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.closeicon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin: 4px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.slidenav .closeicon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin: 4px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.bg {
+  background-image: url(/images/maxresdefault.jpg);
+  width: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.bg .img2 {
+  float: left;
+  position: relative;
+  right: 50px;
+  left: 300px;
+  transition: 0.1s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.bg .img2:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+header h1 {
+  color: #fff;
+  position: absolute;
+  top: 359px;
+  font-size: 70px;
+  right: 200px;
+  transition: 0.9s;
+  background-color: transparent;
+  cursor: pointer;
+}
+header h1:hover {
+  transform: scale(1.1);
+}
+
+header span {
+  background-color: transparent;
+  animation: animate 5s linear infinite;
+}
+
+header .span2 {
+  color: rgb(96, 149, 177);
+}
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+header .span2:hover {
+  color: rgb(234, 234, 234);
+}
+.bg button {
+  position: relative;
+  top: 430px;
+  right: -460px;
+  padding: 10px 60px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(96, 149, 177);
+}
+.bg button:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: #fff;
+  transition: 0.5s;
+}
+.card1 img {
+  position: absolute;
+  right: 100px;
+  left: 190px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 9px rgb(63, 62, 62);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.intro {
+  height: fit-content;
+  width: 400px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 190px;
+  color: white;
+  top: 1210px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.intro h1 {
+  margin: 10px;
+  font-size: 50px;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+.card1:hover {
+  cursor: pointer;
+}
+.card1:hover .intro {
+  height: fit-content;
+  left: 190px;
+  background-color: rgba(0, 0, 0, 0.332);
+}
+.card1:hover h1 {
+  opacity: 1;
+  visibility: visible;
+}
+.card1:hover img {
+  transform: scale(1.1);
+}
+.content-about {
+  position: absolute;
+  right: 130px;
+  bottom: -400px;
+}
+.content-about h1 {
+  font-size: 70px;
+  color: #fff;
+  transition: 0.5s;
+}
+.content-about p {
+  font-size: 25px;
+  color: rgb(183, 183, 183);
+}
+span h1 b{
+  color: rgb(96, 149, 177);
+}
+.content-about button {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 10px 30px 10px;
+  background-color: rgb(96, 149, 177);
+  border: 1px solid rgb(96, 149, 177);
+  color: #fff;
+}
+.content-about button:hover {
+  color: #fff;
+  background-color: rgb(65, 63, 63);
+  border: 1px solid black;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card2 {
+  position: absolute;
+  top: 1600px;
+  right: 1000px;
+  border: 1px solid rgb(227, 182, 122);
+  border-radius: 40px;
+}
+.card3 {
+  position: absolute;
+  top: 1500px;
+  right: 590px;
+  border: 1px solid rgb(96, 149, 177);
+  border-radius: 40px;
+}
+.card4 {
+  position: absolute;
+  top: 1600px;
+  right: 193px;
+  border: 1px solid rgb(79, 97, 153);
+  border-radius: 40px;
+}
+.cards img {
+  border-radius: 40px;
+  box-shadow: 1px 1px 9px 1px rgb(63, 62, 62);
+}
+span h1 {
+  color: rgb(247, 254, 254);
+  position: absolute;
+  top: 1430px;
+  right: 450px;
+  font-weight: 600;
+}
+.text p {
+  position: absolute;
+  color: #fff;
+  top: 2230px;
+  right: 450px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.text span{
+  color:rgb(96, 149, 177);
+}
+.intro-muckup {
+  position: absolute;
+  top: 1500px;
+  right: 900px;
+}
+.intro-muckup img {
+  border-radius: 50px;
+  box-shadow: 1px 1px 9px rgb(63, 62, 62);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.intro-muckup:hover .idbrand {
+  height: fit-content;
+}
+.intro-muckup:hover img {
+  transform: scale(1.1);
+}
+.section1 {
+  position: absolute;
+  color: #fff;
+  top: 1700px;
+  text-align: center;
+  right: 100px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.section1 button {
+  padding: 10px 20px 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: rgb(96, 149, 177);
+  color: #fff;
+  position: relative;
+  top: 30px;
+}
+.section1 button:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+.section1 h1{
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  top: -40px;
+}
+.second-muckup {
+  position: absolute;
+  top: 2200px;
+  right: 100px;
+}
+.second-muckup img{
+  border-radius: 50px;
+  box-shadow: 1px 1px 9px rgb(63, 62, 62);
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+  right: -900px;
+}
+.second-muckup:hover img {
+  transform: scale(1.1);
+}
+.work h1{
+  position: absolute;
+  top: 1400px;
+  color: #fff;
+  right: 530px;
+  font-weight: 700;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.section2 h1{
+  position: absolute;
+  color: #fff;
+  right: 800px;
+  top: 160px;
+  font-size: 70px;
+}
+.section2 p{
+  position: relative;
+  top: -300px;
+  color: #fff;
+  right: 260px;
+  text-align: center;
+
+}
+.section2 button{
+  position: relative;
+  top: -260px;
+  right: -300px;
+  padding: 10px 20px 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: rgb(96, 149, 177);
+  color: #fff;
+  
+}
+.section2 button:hover{
+  background-color: rgb(65, 63, 63);
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.container .first-card{
+  color: #fff;
+  border: 1px solid white;
+  padding: 20px 30px 20px;
+  margin: 11px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 9px 3px rgb(63, 62, 62);
+  padding-top: 40px;
+  transition: 0.5s;
+}
+.container .first-card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
+}
+.container .second-card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
+}
+.container .theerd-card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
+}
+.container .first-card h3{
+  color: rgb(135, 134, 134);
+  font-size: 30px;
+  font-weight: 400;
+}
+.container .second-card h3{
+  color: rgb(135, 134, 134);
+  font-size: 30px;
+  font-weight: 400;
+}
+.container .theerd-card h3{
+  color: rgb(135, 134, 134);
+  font-size: 30px;
+  font-weight: 400;
+}
+.container .second-card{
+  color: #fff;
+  border: 1px solid white;
+  padding: 20px 30px 20px;
+  margin: 11px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 9px 3px rgb(63, 62, 62);
+  padding-top: 40px;
+  transition: 0.5s;
+}
+.container .theerd-card{
+  color: #fff;
+  border: 1px solid white;
+  padding: 20px 30px 20px ;
+  margin: 11px;
+  padding-top: 40px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 9px 3px rgb(63, 62, 62);
+  transition: 0.5s;
+}
+.title h1{
+  color: #fff;
+  text-align: center;
+  padding: 70px;
+  font-weight: 700;
+animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+footer {
+  height: 10rem;
+  margin: auto;
+  border-radius: 0 0 1rem 1rem;
+  padding: 5rem;
+  color: #fff;
+
+}
+footer .main-footer {
+  position: absolute;
+  top: 1400px;
+  right: 530px;
+}
+footer .main-footer h4 {
+  font-size: 40px;
+  text-align: center;
+}
+footer .main-footer p {
+  text-align: center;
+}
+footer .main-footer img {
+  position: relative;
+  right: 60px;
+  left: 70px;
+}
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: #282828;
+}
