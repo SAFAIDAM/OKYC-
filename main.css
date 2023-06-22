@@ -5,8 +5,29 @@
 body {
   background-color: black;
 }
+
+.cursor-dot{
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+}
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot, .cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1000000;
+  pointer-events: none;
+}
 html {
   scroll-behavior: smooth;
+  cursor: none;
 }
 .main-nav img {
   position: relative;
@@ -189,7 +210,7 @@ header .span2:hover {
   font-size: 25px;
   color: rgb(183, 183, 183);
 }
-span h1 b{
+span h1 b {
   color: rgb(96, 149, 177);
 }
 .content-about button {
@@ -247,8 +268,8 @@ span h1 {
   font-size: 40px;
   font-weight: 600;
 }
-.text span{
-  color:rgb(96, 149, 177);
+.text span {
+  color: rgb(96, 149, 177);
 }
 .intro-muckup {
   position: absolute;
@@ -286,12 +307,12 @@ span h1 {
   position: relative;
   top: 30px;
 }
-.section1 button:hover{
+.section1 button:hover {
   background-color: rgb(65, 63, 63);
   transition: 0.6s;
   transform: scale(1.1);
 }
-.section1 h1{
+.section1 h1 {
   font-size: 50px;
   font-weight: 600;
   position: relative;
@@ -302,7 +323,7 @@ span h1 {
   top: 2200px;
   right: 100px;
 }
-.second-muckup img{
+.second-muckup img {
   border-radius: 50px;
   box-shadow: 1px 1px 9px rgb(63, 62, 62);
   overflow: hidden;
@@ -313,7 +334,7 @@ span h1 {
 .second-muckup:hover img {
   transform: scale(1.1);
 }
-.work h1{
+.work h1 {
   position: absolute;
   top: 1400px;
   color: #fff;
@@ -330,22 +351,21 @@ span h1 {
   }
 }
 
-.section2 h1{
+.section2 h1 {
   position: absolute;
   color: #fff;
   right: 800px;
   top: 160px;
   font-size: 70px;
 }
-.section2 p{
+.section2 p {
   position: relative;
   top: -300px;
   color: #fff;
   right: 260px;
   text-align: center;
-
 }
-.section2 button{
+.section2 button {
   position: relative;
   top: -260px;
   right: -300px;
@@ -355,20 +375,19 @@ span h1 {
   border: 1px solid black;
   background-color: rgb(96, 149, 177);
   color: #fff;
-  
 }
-.section2 button:hover{
+.section2 button:hover {
   background-color: rgb(65, 63, 63);
   transition: 0.6s;
   transform: scale(1.1);
 }
-.container{
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
 }
-.container .first-card{
+.container .first-card {
   color: #fff;
   border: 1px solid white;
   padding: 20px 30px 20px;
@@ -378,37 +397,37 @@ span h1 {
   padding-top: 40px;
   transition: 0.5s;
 }
-.container .first-card:hover{
+.container .first-card:hover {
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
 }
-.container .second-card:hover{
+.container .second-card:hover {
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
 }
-.container .theerd-card:hover{
+.container .theerd-card:hover {
   transform: scale(1.1);
   transition: 0.5s;
   box-shadow: 1px 1px 9px 10px rgb(63, 62, 62);
 }
-.container .first-card h3{
+.container .first-card h3 {
   color: rgb(135, 134, 134);
   font-size: 30px;
   font-weight: 400;
 }
-.container .second-card h3{
+.container .second-card h3 {
   color: rgb(135, 134, 134);
   font-size: 30px;
   font-weight: 400;
 }
-.container .theerd-card h3{
+.container .theerd-card h3 {
   color: rgb(135, 134, 134);
   font-size: 30px;
   font-weight: 400;
 }
-.container .second-card{
+.container .second-card {
   color: #fff;
   border: 1px solid white;
   padding: 20px 30px 20px;
@@ -418,22 +437,22 @@ span h1 {
   padding-top: 40px;
   transition: 0.5s;
 }
-.container .theerd-card{
+.container .theerd-card {
   color: #fff;
   border: 1px solid white;
-  padding: 20px 30px 20px ;
+  padding: 20px 30px 20px;
   margin: 11px;
   padding-top: 40px;
   border-radius: 40px;
   box-shadow: 1px 1px 9px 3px rgb(63, 62, 62);
   transition: 0.5s;
 }
-.title h1{
+.title h1 {
   color: #fff;
   text-align: center;
   padding: 70px;
   font-weight: 700;
-animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
 }
 @keyframes animate {
   from {
@@ -449,7 +468,6 @@ footer {
   border-radius: 0 0 1rem 1rem;
   padding: 5rem;
   color: #fff;
-
 }
 footer .main-footer {
   position: absolute;
@@ -468,9 +486,9 @@ footer .main-footer img {
   right: 60px;
   left: 70px;
 }
-footer a{
+footer a {
   color: #fff;
 }
-footer a:hover{
+footer a:hover {
   color: #282828;
 }
